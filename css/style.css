@@ -6,11 +6,11 @@
   --text-color: #2b2b2b;
   --white-color: #fff;
 
-  --img-pink: #F85084;
-  --img-teal: #048C8C;
-  --img-orange: #FFBB45;
+  --img-pink: #f85084;
+  --img-teal: #048c8c;
+  --img-orange: #ffbb45;
 
-  --lamp-color-1: #FFF59E;
+  --lamp-color-1: #fff59e;
   --lamp-color-2: #fef24e;
   --lamp-color-3: #fefebe;
 }
@@ -45,7 +45,8 @@ header {
 }
 
 header,
-ul, nav {
+ul,
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,24 +57,24 @@ li {
   margin-left: 32px;
 }
 
-a {
+header a {
   text-decoration: none;
   color: var(--primary-color);
   transition: all 2s linear;
 }
 
-a:visited {
-  color: #580f55;
+header a:visited {
+  color: var(--primary-color);
 }
 
-a:hover,
-a:focus {
+header a:hover,
+header a:focus {
   cursor: pointer;
   text-decoration: underline;
   color: var(--secondary-color);
 }
 
-a:active {
+header a:active {
   color: var(--secondary-color);
 }
 
@@ -122,10 +123,37 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 32px;
   margin-top: 40px;
   width: 100%;
+}
+
+.grid div {
+  background-color: #771daf;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.grid img {
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.grid .tech {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.grid .work-links-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.work-links {
+  color: white;
 }
 
 table {
@@ -174,14 +202,15 @@ textarea:focus {
   outline: none;
 }
 
-textarea, input {
+textarea,
+input {
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--text-color);
   padding: 8px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background: var(--primary-color);
   color: var(--white-color);
   margin-top: 16px;
@@ -191,7 +220,7 @@ input[type=submit] {
 
 footer {
   margin-top: auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +235,7 @@ footer img {
   padding: 8px;
 }
 
-/* Animations */ 
+/* Animations */
 
 .animate-light {
   animation: color-change-one 2s ease-in-out infinite;
@@ -324,18 +353,17 @@ footer img {
   }
 }
 
-
-/* Media Queries */ 
+/* Media Queries */
 
 @media screen and (max-width: 600px) {
-
   header {
     margin-bottom: 40px;
     flex-direction: column;
     width: 100%;
   }
 
-  nav, ul {
+  nav,
+  ul {
     width: 100%;
   }
 
@@ -367,6 +395,6 @@ footer img {
   }
 
   form {
-    width: 90%
+    width: 90%;
   }
 }
