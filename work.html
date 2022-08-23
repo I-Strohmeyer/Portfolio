@@ -15,8 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--<link rel="stylesheet" href="./css/style.production.css" /> -->
     <link rel="stylesheet" href="./css/style.production.css" />
+    <!--<link rel="stylesheet" href="./css/style.css" /> -->
     <title>Work | IS</title>
   </head>
 
@@ -27,26 +27,28 @@
         <nav>
           <ul role="menubar">
             <li role="presentation">
-              <a href="index.html" role="menuitem">Home</a>
+              <a class="index-index" href="index.html" role="menuitem">Home</a>
             </li>
             <li role="presentation">
-              <a href="work.html" role="menuitem">Work</a>
+              <a class="index-work" href="work.html" role="menuitem">Work</a>
             </li>
             <li role="presentation">
-              <a href="about.html" role="menuitem">About</a>
+              <a class="index-about" href="about.html" role="menuitem">About</a>
             </li>
             <li role="presentation">
-              <a href="contact.html" role="menuitem">Contact</a>
+              <a class="index-contact" href="contact.html" role="menuitem"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
       </header>
-      <main>
-        <h1>My work</h1>
+      <main class="main__work">
+        <h1 class="work-color-bg">My work</h1>
         <section class="grid">
           <div>
             <h2>Pokedex</h2>
-            <img src="./img/project1_a.jpg" alt="" />
+            <div class="work-img-wrapper"></div>
             <p>
               With Pokedex you can find information about pokemon which is done
               by using an open-source API.
@@ -68,7 +70,7 @@
 
           <div>
             <h2>NatureWatch (Movie API)</h2>
-            <img src="./img/project2_a.jpg" alt="app picture" />
+            <div class="work-img-wrapper"></div>
             <p>
               Backend for a movie API that has been used by my NatureWatch
               applications.
@@ -83,7 +85,7 @@
 
           <div>
             <h2>NatureWatch (React)</h2>
-            <img src="./img/project3_a.jpg" alt="app picture" />
+            <div class="work-img-wrapper"></div>
             <p>
               Create an account and view movies and their info. If you like one,
               you can favorite it! Based on the NatureWatch movie API.
@@ -98,7 +100,7 @@
 
           <div>
             <h2>MeetupApp</h2>
-            <img src="./img/project4_a.jpg" alt="app picture" />
+            <div class="work-img-wrapper"></div>
             <p>
               Search for events in a city near you. Filter to see specific
               events. Includes offline functions since it's a PWA.
@@ -121,23 +123,8 @@
           </div>
 
           <div>
-            <h2>ChatsApp</h2>
-            <img src="./img/project5_ab.jpg" alt="app picture" />
-            <p>
-              Chatsapp lets you chat with your friends and family. You can share
-              images and location.
-            </p>
-            <p class="tech">Built with: React Native, Expo, Cloud Firestore</p>
-            <a
-              class="work-links"
-              href="https://github.com/I-Strohmeyer/ChatsApp"
-              >Code</a
-            >
-          </div>
-
-          <div>
             <h2>NatureWatch (Angular)</h2>
-            <img src="./img/project6_22_a.jpg" alt="app picture" />
+            <div class="work-img-wrapper"></div>
             <p>
               Create an account and view movies and their info. If you like one,
               you can favorite it! Built with Angular this time.
